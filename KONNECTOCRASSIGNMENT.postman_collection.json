@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "c2603b6e-0b96-4006-9caa-245c7ff3135b",
+		"name": "KONNECTOCRASSIGNMENT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5992075"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8043/v1/ocr/file-based",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "document_type",
+							"type": "file",
+							"src": "/Users/Downloads/WhatsApp Image 2024-06-30 at 16.24.03.jpeg"
+						},
+						{
+							"key": "is_front",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "document_type",
+							"value": "AADHAR",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8042/ocr/file_based",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8042",
+					"path": [
+						"ocr",
+						"file_based"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
